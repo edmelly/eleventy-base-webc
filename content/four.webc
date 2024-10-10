@@ -1,7 +1,5 @@
----node
-function permalink(data) {
-	return "/remapped/";
-}
+---
+permalink: "/three/"
 ---
 <p>This is another page.</p>
 

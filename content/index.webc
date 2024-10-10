@@ -1,11 +1,19 @@
----node
+---js
 // Initialize page data in JavaScript front matter
 let place = "earth";
+
+const eleventyNavigation = {
+	key: Home,
+	order: 0,
+}
 ---
 <hello-component place="world"></hello-component>
 <hello-component :place="place"></hello-component>
 
-<p><a href="page.webc">Another page</a>.</p>
+<p><a href="one.md">One</a>.</p>
+<p><a href="two.md">Two</a>.</p>
+<p><a href="three.webc">Three</a>.</p>
+<p><a href="four.webc">Four</a>.</p>
 
 <!--- is-land: https://www.11ty.dev/docs/plugins/partial-hydration/ --->
 <!---

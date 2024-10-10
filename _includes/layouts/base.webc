@@ -15,6 +15,9 @@
 	<body>
 		<header>
 			<a href="/"><strong @text="metadata.title"></strong></a>
+			<nav
+				@html="eleventyNavigationToHtml(eleventyNavigation($data.collections.all))">
+			</nav>
 		</header>
 
 		<main @raw="content"></main>
